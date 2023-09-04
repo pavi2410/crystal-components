@@ -1,0 +1,16 @@
+{
+  "name": "crystal-ui-root",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "pnpm -F crystal-ui build",
+    "dev": "pnpm -F landing dev",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish": "pnpm -F crystal-ui publish"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

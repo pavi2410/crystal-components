@@ -1,0 +1,42 @@
+{
+  "name": "crystal-ui",
+  "version": "0.0.1",
+  "author": "pavi2410",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "main": "./dist/crystal-ui.umd.cjs",
+  "module": "./dist/crystal-ui.js",
+  "types": "./dist/crystal-ui.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "peerDependencies": {
+    "solid-js": "^1.7.11"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "7.4.0",
+    "@storybook/addon-interactions": "7.4.0",
+    "@storybook/addon-links": "7.4.0",
+    "@storybook/blocks": "7.4.0",
+    "@storybook/testing-library": "0.2.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "storybook": "7.4.0",
+    "storybook-solidjs": "1.0.0-beta.2",
+    "storybook-solidjs-vite": "1.0.0-beta.2",
+    "typescript": "^5.2.2",
+    "unocss": "^0.55.7",
+    "vite": "^4.4.9",
+    "vite-plugin-dts": "^3.5.3",
+    "vite-plugin-solid": "^2.7.0"
+  }
+}
