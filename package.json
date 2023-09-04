@@ -8,7 +8,7 @@
     "build": "pnpm -F crystal-ui build",
     "dev": "pnpm -F landing dev",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "publish": "pnpm -F crystal-ui publish"
+    "publish-lib": "pnpm -F crystal-ui publish"
   },
   "keywords": [],
   "author": "",
