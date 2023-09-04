@@ -10,7 +10,7 @@ importers:
 
   landing:
     dependencies:
-      crystal-ui:
+      crystal-components:
         specifier: workspace:*
         version: link:../lib
       solid-js:

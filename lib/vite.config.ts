@@ -16,8 +16,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, "src/index.js"),
-      name: "crystal-ui",
-      fileName: "crystal-ui",
+      name: "crystal",
+      fileName: "index",
     },
     rollupOptions: {
       external: [

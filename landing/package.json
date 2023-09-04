@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "crystal-ui": "workspace:*",
+    "crystal-components": "workspace:*",
     "solid-js": "^1.7.11"
   },
   "devDependencies": {

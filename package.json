@@ -5,10 +5,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "pnpm -F crystal-ui build",
+    "build": "pnpm -F crystal-components build",
     "dev": "pnpm -F landing dev",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "publish-lib": "pnpm -F crystal-ui publish"
+    "publish-lib": "pnpm -F crystal-components publish"
   },
   "keywords": [],
   "author": "",

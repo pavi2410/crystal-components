@@ -2,8 +2,8 @@ import { createSignal } from 'solid-js'
 import solidLogo from './assets/solid.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { Button } from 'crystal-ui'
-import 'crystal-ui/dist/style.css'
+import { Button } from 'crystal-components'
+import 'crystal-components/dist/style.css'
 
 function App() {
   const [count, setCount] = createSignal(0)

@@ -1,5 +1,5 @@
 {
-  "name": "crystal-ui",
+  "name": "crystal-components",
   "version": "0.0.1",
   "author": "pavi2410",
   "type": "module",
@@ -9,9 +9,9 @@
   "sideEffects": [
     "**/*.css"
   ],
-  "main": "./dist/crystal-ui.umd.cjs",
-  "module": "./dist/crystal-ui.js",
-  "types": "./dist/crystal-ui.d.ts",
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
