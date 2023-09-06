@@ -2,42 +2,108 @@ import type { Meta, StoryObj } from 'storybook-solidjs';
 
 import { Button } from '../components/Button';
 
-// More on how to set up stories at: https://storybook.js.org/docs/7.0/solid/writing-stories/introduction
 const meta = {
-  title: 'Example/Button',
+  title: 'Components/Button',
   component: Button,
   tags: ['autodocs'],
-  argTypes: {
+  parameters: {
+    componentSubtitle: "Primary UI component for user interaction",
   },
+  argTypes: {
+    variant: {
+      control: { type: 'inline-radio' },
+      options: ['filled', 'outline', 'flat', 'ghost'],
+    },
+    size: {
+      control: { type: 'inline-radio' },
+      options: ['small', 'medium', 'large'],
+    },
+    radius: {
+      control: { type: 'inline-radio' },
+      options: ['square', 'rounded', 'circular'],
+    },
+    children: {},
+    onClick: { action: 'clicked' }
+  },
+  args: {
+    variant: 'filled',
+    size: 'medium',
+    radius: 'rounded',
+    children: 'Button',
+  }
 } satisfies Meta<typeof Button>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-// More on writing stories with args: https://storybook.js.org/docs/7.0/solid/writing-stories/args
-export const Primary: Story = {
+export const Filled: Story = {
   args: {
-    primary: true,
-    label: 'Button',
+    variant: 'filled',
+    size: 'medium',
+    radius: 'rounded',
+    children: 'Button',
   },
 };
 
-export const Secondary: Story = {
+export const Outlined: Story = {
   args: {
-    label: 'Button',
+    variant: 'outline',
+    children: 'Button',
+  },
+};
+
+export const Flat: Story = {
+  args: {
+    variant: 'flat',
+    children: 'Button',
+  }
+}
+
+export const Ghost: Story = {
+  args: {
+    variant: 'ghost',
+    children: 'Button',
+  }
+}
+
+export const Small: Story = {
+  args: {
+    size: 'small',
+    children: 'Button',
+  },
+};
+
+export const Medium: Story = {
+  args: {
+    size: 'medium',
+    children: 'Button',
   },
 };
 
 export const Large: Story = {
   args: {
     size: 'large',
-    label: 'Button',
+    children: 'Button',
   },
 };
 
-export const Small: Story = {
+export const Square: Story = {
   args: {
-    size: 'small',
-    label: 'Button',
+    radius: 'square',
+    children: 'Button',
+  },
+};
+
+export const Rounded: Story = {
+  args: {
+    radius: 'rounded',
+    children: 'Button',
+  },
+};
+
+export const Circular: Story = {
+  args: {
+    radius: 'circular',
+    children: 'Button',
   },
 };
